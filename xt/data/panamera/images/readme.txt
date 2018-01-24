@@ -1,5 +1,5 @@
 Do not add, delete, or modify files in data folder. These are data for
-File::EasyFind tests that compare results to what's actually contained
+File::Find::Rex tests that compare results to what's actually contained
 in the data folder.
 
 Any modifications to the data folder and it's contents (including
