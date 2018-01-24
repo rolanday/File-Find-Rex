@@ -1,15 +1,19 @@
 File-Find-Rex
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+Version 1.00
 
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
+This module provides an easy to use object oriented interface to File::Find and
+adds the ability to filter results using regular expressions.
+
+Features include:
+
+- Object oriented interface
+- Find results returned as array or via a callback subroutine
+- Regular expression matching
+- Option to ignore directory listings in output (i.e., just files)
+- Option to ignore hidden files
+- Option to scope query using file last modified date
+- Caller provided context passed when using callback subroutine
 
 
 INSTALLATION
@@ -42,6 +46,8 @@ You can also look for information at:
     Search CPAN
         http://search.cpan.org/dist/File-Find-Rex/
 
+		GitHub
+				https://github.com/rolanday/File-Find-Rex
 
 LICENSE AND COPYRIGHT
 
@@ -82,4 +88,3 @@ YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR
 CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
 CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-

@@ -215,6 +215,33 @@ regular expression search criteria.
 
 Version 1.00
 
+=head1 DESCRIPTION
+
+This module provides an easy to use object oriented interface to
+C<File::Find> and adds the ability to filter results using regular
+expressions.
+
+Features include:
+
+=over 4
+
+=item * Object oriented interface
+
+=item * Find results returned as array or via a callback subroutine
+
+=item * Regular expression matching
+
+=item * Option to ignore directory listings in output (i.e., just files)
+
+=item * Option to ignore hidden files
+
+=item * Option to scope query using file last modified date
+
+=item * Caller provided context passed when using callback subroutine
+
+
+=back
+
 
 =head1 SYNOPSIS
 
@@ -450,6 +477,11 @@ L<http://cpanratings.perl.org/d/File-Find-Rex>
 
 L<http://search.cpan.org/dist/File-Find-Rex/>
 
+=item * GitHub
+
+L<https://github.com/rolanday/File-Find-Rex>
+
+
 =back
 
 =head1 BUGS AND LIMITATIONS
@@ -460,6 +492,9 @@ L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=File-Find-Rex>.
 I will be notified, and then you'll automatically be notified of progress on
 your bug as I make changes.
 
+=head1 SEE ALSO
+
+L<File::Find>
 
 =head1 AUTHOR
 
