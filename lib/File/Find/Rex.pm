@@ -16,6 +16,7 @@ use Carp;
 use Cwd 'abs_path';
 use File::Basename;
 use File::Find;
+use File::Spec 'canonpath';
 use if $^O eq 'MSWin32', 'Win32::File';
 
 sub new {
@@ -187,11 +188,12 @@ sub _callback {
                 if ( defined $newest ) { $timestamp <= $newest or last NEXT; }
             }
 
+            my $cfile = File::Spec->canonpath($file);
             if ( defined $self->{_callback} ) {
-                $self->{_callback}->( $file, $context );
+                $self->{_callback}->( $cfile, $context );
             }
             else {
-                push @{$files}, $file;
+                push @{$files}, $cfile;
             }
         }
     }
@@ -447,6 +449,8 @@ This module has the following depenencies:
 =item * File::Basename 2.84
 
 =item * File::Find 1.23
+
+=item * File::Spec 3.40
 
 =back
 
