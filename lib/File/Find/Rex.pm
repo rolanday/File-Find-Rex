@@ -9,7 +9,7 @@ package File::Find::Rex;
 use 5.006;
 use strict;
 use warnings;
-our $VERSION = 1.000000;    # 1.0.0 numified
+our $VERSION = '1.00';
 
 # import modules
 use Carp;
@@ -213,7 +213,7 @@ regular expression search criteria.
 
 =head1 VERSION
 
-Version 1.0.0
+Version 1.00
 
 
 =head1 SYNOPSIS
@@ -413,13 +413,13 @@ This module has the following depenencies:
 
 =over 4
 
-=item * Carp v1.29
+=item * Carp 1.29
 
-=item * Cwd v3.40
+=item * Cwd 3.40
 
-=item * File::Basename v2.84
+=item * File::Basename 2.84
 
-=item * File::Find v1.23
+=item * File::Find 1.23
 
 =back
 
