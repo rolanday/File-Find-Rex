@@ -34,7 +34,10 @@ inc/
 /pm_to_blib
 /*.zip
 
+# Developer files
+
 /scratch
+/Distro
 
 # OS generated files #
 ######################

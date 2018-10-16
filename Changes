@@ -1,5 +1,8 @@
 Revision history for File-Find-Rex
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
-
+1.00    2018.01.25
+        Initial version
+1.01    2018.09.07
+        Changed File::Find version dependency
+1.02    2018.10.16
+        Added support to ignore symlinks
